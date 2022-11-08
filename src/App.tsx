@@ -22,7 +22,7 @@ function App() {
   const handleTextChange = (text: string) => {
     inputDispatch({
       type: "change",
-      payload: text,
+      data: text,
     });
   };
 

@@ -5,7 +5,7 @@ type TodoInputStateType = {
 type TodoInputActionType =
   | {
       type: "change";
-      payload: string;
+      data: string;
     }
   | {
       type: "clear";
@@ -18,7 +18,7 @@ export const todoInputReducer = (
   switch (action.type) {
     case "change":
       return {
-        text: action.payload,
+        text: action.data,
       };
 
     case "clear":
